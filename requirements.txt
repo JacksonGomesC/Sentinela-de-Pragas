@@ -1,0 +1,24 @@
+# --- Manipulação e Análise de Dados ---
+numpy>=1.24.0
+pandas>=2.0.0
+
+# --- Visualização de Dados e Gráficos ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# --- Machine Learning e Pré-processamento ---
+scikit-learn>=1.2.0
+
+# --- Bibliotecas Específicas por Área (IA) ---
+# Trilha Agtech / Saúde (Visão e Redes Neurais)
+tensorflow>=2.12.0
+
+# Trilha Saúde / Robótica (Lógica Fuzzy)
+scikit-fuzzy>=0.4.2
+
+# Trilha Logística / Smart Grid (Grafos e Otimização)
+networkx>=3.1
+
+# --- Ferramentas de Desenvolvimento ---
+jupyter>=1.0.0
+ipykernel
