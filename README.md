@@ -5,8 +5,8 @@
 * **Instituição:** Faculdade Engenheiro Salvador Arena (FESA)
 * **Curso:** \[Engenharia de Controle e Automação]
 * **Grupo:** \[A]
-* **Integrantes:** \* \[Antônio Jack S. Monte] - RA: \[062220002]
-
+* **Integrantes:** \
+* * \[Antônio Jack S. Monte] - RA: \[062220002]
   * \[Giovanna Alves Gonçalves] - RA: \[062220006]
   * \[José de Jesus Amaral] - RA: \[062220033]
   * \[Jackson Gomes Cerqueira] - RA: \[062220030]
