@@ -3,13 +3,13 @@
 ### 1\. Identificação do Grupo
 
 * **Instituição:** Faculdade Engenheiro Salvador Arena (FESA)
-* **Curso:** \[Engenharia de Controle e Automação]
-* **Grupo:** \[A]
+* **Curso:** \Engenharia de Controle e Automação
+* **Grupo:** \A
 * **Integrantes:** 
-* * \[Antônio Jack S. Monte] - RA: \062220002
-  * \[Giovanna Alves Gonçalves] - RA: \062220006
-  * \[José de Jesus Amaral] - RA: \062220033
-  * \[Jackson Gomes Cerqueira] - RA: \062220030
+* * \[Antônio Jack S. Monte] - RA: 062220002
+  * \[Giovanna Alves Gonçalves] - RA: 062220006
+  * \[José de Jesus Amaral] - RA: 062220033
+  * \[Jackson Gomes Cerqueira] - RA: 062220030
 
 \---
 
@@ -28,9 +28,9 @@ Selecione a trilha tecnológica do projeto (marque com um \[x]):
 
 Nesta seção, descrevemos o cenário de atuação e a modelagem do agente inteligente.
 
-* **Contexto:** \Agrotécnica (Agricultura de Precisão). O cenário de atuação é o monitoramento fitossanitário de grandes extensões de monoculturas ou cultivos agrícolas que exigem vigilância constante contra pragas e doenças.
-* **Problema:** \Monitoramento Manual Amostral e Reativo. O gargalo atual reside na dependência de técnicos humanos para vistorias locais, o que limita a análise a pequenas amostras da plantação. Isso gera uma "janela de invisibilidade", onde focos de pragas são detectados apenas quando a infestação já é severa, resultando em uso excessivo de defensivos (aplicação em área total) e perda de produtividade.
-* **Impacto:** \Otimização de Insumos e Resiliência Produtiva. Espera-se uma redução superior a 50% no tempo de tomada de decisão e uma economia significativa de recursos financeiros e ambientais, devido à aplicação localizada (pulverização cirúrgica). O ganho principal é a transição de um modelo de gestão reativo para um modelo preditivo e censitário (100% de cobertura).
+* **Contexto:** Agrotécnica (Agricultura de Precisão). O cenário de atuação é o monitoramento fitossanitário de grandes extensões de monoculturas ou cultivos agrícolas que exigem vigilância constante contra pragas e doenças.
+* **Problema:** Monitoramento Manual Amostral e Reativo. O gargalo atual reside na dependência de técnicos humanos para vistorias locais, o que limita a análise a pequenas amostras da plantação. Isso gera uma "janela de invisibilidade", onde focos de pragas são detectados apenas quando a infestação já é severa, resultando em uso excessivo de defensivos (aplicação em área total) e perda de produtividade.
+* **Impacto:** Otimização de Insumos e Resiliência Produtiva. Espera-se uma redução superior a 50% no tempo de tomada de decisão e uma economia significativa de recursos financeiros e ambientais, devido à aplicação localizada (pulverização cirúrgica). O ganho principal é a transição de um modelo de gestão reativo para um modelo preditivo e censitário (100% de cobertura).
 
 #### Modelagem PEAS (Agente Inteligente)
 
@@ -47,8 +47,8 @@ Nesta seção, descrevemos o cenário de atuação e a modelagem do agente intel
 
 Definição das fontes de dados e da inteligência por trás da solução.
 
-* **Origem dos Dados:** \O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo: NDVI: Índice de vigor vegetativo (0 a 1); Infestação: Porcentagem de pragas detectadas via visão computacional; GPS RTK: Coordenadas de alta precisão.
-* **Lógica de IA:** \Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).
+* **Origem dos Dados:** O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo: NDVI: Índice de vigor vegetativo (0 a 1); Infestação: Porcentagem de pragas detectadas via visão computacional; GPS RTK: Coordenadas de alta precisão.
+* **Lógica de IA:** Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).
 * **Justificativa:** Por que essa técnica é ideal para este problema específico? As CNNs são a técnica ideal porque possuem uma capacidade superior de extração de características espaciais (texturas, padrões de manchas e formas de insetos) que são imperceptíveis em análises estatísticas comuns. A utilização de arquiteturas como o YOLO (You Only Look Once) permite o processamento em tempo real diretamente no link de rádio ou na estação de solo, garantindo que o mapa de calor seja gerado enquanto o drone ainda está em voo. Além disso, a integração de dados multiespectrais funciona como uma "camada de atenção" extra, permitindo que a IA detecte anomalias clorofilianas antes que o dano físico seja visível na imagem RGB.
 
 \---
