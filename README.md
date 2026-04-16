@@ -28,18 +28,18 @@ Selecione a trilha tecnológica do projeto (marque com um \[x]):
 
 Nesta seção, descrevemos o cenário de atuação e a modelagem do agente inteligente.
 
-* **Contexto:** \[Descrever o setor, ex: Indústria 4.0 ou Gestão de Energia].
-* **Problema:** \[Explicar o gargalo ou falha que a IA ajudará a resolver].
-* **Impacto:** \[Mencionar o ganho esperado, ex: redução de custos ou aumento de segurança].
+* **Contexto:** \[Agrotécnica (Agricultura de Precisão). O cenário de atuação é o monitoramento fitossanitário de grandes extensões de monoculturas ou cultivos agrícolas que exigem vigilância constante contra pragas e doenças.].
+* **Problema:** \[Monitoramento Manual Amostral e Reativo. O gargalo atual reside na dependência de técnicos humanos para vistorias locais, o que limita a análise a pequenas amostras da plantação. Isso gera uma "janela de invisibilidade", onde focos de pragas são detectados apenas quando a infestação já é severa, resultando em uso excessivo de defensivos (aplicação em área total) e perda de produtividade.].
+* **Impacto:** \[Otimização de Insumos e Resiliência Produtiva. Espera-se uma redução superior a 50% no tempo de tomada de decisão e uma economia significativa de recursos financeiros e ambientais, devido à aplicação localizada (pulverização cirúrgica). O ganho principal é a transição de um modelo de gestão reativo para um modelo preditivo e censitário (100% de cobertura).].
 
 #### Modelagem PEAS (Agente Inteligente)
 
 |Componente|Descrição|
 |-|-|
-|**Performance (P)**|Critérios de sucesso (ex: precisão de acerto, kWh economizados).|
-|**Ambiente (E)**|Onde o agente opera (ex: armazém simulado, rede elétrica).|
-|**Atuadores (A)**|Como o agente age (ex: acionamento de motores, válvulas).|
-|\*\*Sensores (S) \*\*|Como o agente percebe o ambiente (ex: câmeras, sensores de carga).|
+|**Performance (P)**|Eficiência e Precisão: Mapeamento de 100% da área de cultivo; redução de 50% no tempo entre diagnóstico e aplicação; erro de geolocalização inferior a 50cm (GPS RTK); e redução comprovada no custo de insumos.|
+|**Ambiente (E)**|Área Agrícola (Lavoura): Grandes extensões de cultivo abertas, sujeitas a variações de luminosidade solar, ventos e obstáculos físicos (árvores, relevo). Opera na malha geográfica da plantação.|
+|**Atuadores (A)**|Sistemas de Controle e Estabilidade: Motores de voo (propulsão), Gimbal de 3 eixos (estabilização da imagem), Link de Rádio (transmissão de dados/mapas) e sistema de pouso/retorno autônomo.|
+|\*\*Sensores (S) \*\*|Percepção Multimodal: Câmera Multiespectral (infravermelho para estresse hídrico/pragas), Câmera RGB 4K (detalhamento visual), GPS RTK (posicionamento centimétrico) e sensores de luminosidade.|
 
 \---
 
@@ -47,9 +47,9 @@ Nesta seção, descrevemos o cenário de atuação e a modelagem do agente intel
 
 Definição das fontes de dados e da inteligência por trás da solução.
 
-* **Origem dos Dados:** \[Link para dataset no Kaggle/UCI ou descrição da fonte].
-* **Lógica de IA:** \[Técnica utilizada: ex: Redes Neurais, Lógica Fuzzy, Busca A\*].
-* **Justificativa:** Por que essa técnica é ideal para este problema específico?
+* **Origem dos Dados:** \[O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo: NDVI: Índice de vigor vegetativo (0 a 1); Infestação: Porcentagem de pragas detectadas via visão computacional; GPS RTK: Coordenadas de alta precisão.].
+* **Lógica de IA:** \[Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).].
+* **Justificativa:** Por que essa técnica é ideal para este problema específico? As CNNs são a técnica ideal porque possuem uma capacidade superior de extração de características espaciais (texturas, padrões de manchas e formas de insetos) que são imperceptíveis em análises estatísticas comuns. A utilização de arquiteturas como o YOLO (You Only Look Once) permite o processamento em tempo real diretamente no link de rádio ou na estação de solo, garantindo que o mapa de calor seja gerado enquanto o drone ainda está em voo. Além disso, a integração de dados multiespectrais funciona como uma "camada de atenção" extra, permitindo que a IA detecte anomalias clorofilianas antes que o dano físico seja visível na imagem RGB.
 
 \---
 
@@ -58,8 +58,8 @@ Definição das fontes de dados e da inteligência por trás da solução.
 O fluxo de processamento dos dados segue estas etapas:
 
 1. **Extração:** Coleta de dados via arquivos \[CSV/JSON] ou simulação.
-2. **Transformação:** Limpeza de nulos, normalização e engenharia de atributos.
-3. **Carga:** Disponibilização dos dados para o treinamento do modelo de IA.
+2. **Transformação:** Nesta fase, os dados passam por um pipeline de refinamento: Limpeza de Nulos: Descarte de capturas com falha de georreferenciamento ou imagens com borrão excessivo (motion blur). Normalização: Ajuste de brilho e contraste com base nos sensores de luminosidade para garantir que a rede neural receba padrões visuais constantes. Engenharia de Atributos: Criação de camadas de dados extras, como o cálculo do NDVI (Índice de Vegetação por Diferença Normalizada) a partir das bandas de infravermelho, essencial para destacar focos de estresse invisíveis ao olho humano.
+3. **Carga:** Os dados processados são estruturados e carregados em um banco de dados geoespacial ou diretório otimizado. Esta carga disponibiliza o dataset final para o treinamento e inferência da IA, permitindo a geração do mapa de calor de severidade e a exportação direta dos pontos de pulverização para o tablet do agricultor ou para o sistema do pulverizador mecanizado.
 
 \---
 
