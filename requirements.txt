@@ -1,5 +1,11 @@
+# Bibliotecas Base
 pandas
-numpy
+numpy>=1.23.5,<2.0.0
+scipy
+
+# Inteligência Artificial e Lógica
 scikit-fuzzy
-matplotlib
 google-generativeai
+
+# Visualização e Ambiente
+matplotlib
