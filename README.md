@@ -105,7 +105,7 @@ Componentes da Arquitetura:
 ![Gráfico Pulverização](grafico_pulverizacao.png)
 
 **Visualização das Funções de Pertinência**
-**Nota:** Os gráficos acima demonstram a transição suave entre os estados, garantindo que o drone não mude a dosagem de forma brusca, o que preserva os componentes mecânicos e otimiza o uso de defensivos.
+\**Nota:** Os gráficos acima demonstram a transição suave entre os estados, garantindo que o drone não mude a dosagem de forma brusca, o que preserva os componentes mecânicos e otimiza o uso de defensivos.
 
 \---
 
