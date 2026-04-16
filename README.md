@@ -88,3 +88,12 @@ Para reproduzir o ambiente e testar o diagnóstico:
 \---
 
 ### 8\. Arquitetura Lógica: Motor de Decisão Fuzzy
+Diferente de sistemas baseados em regras rígidas (como if-else), este projeto utiliza Lógica Fuzzy (Nebulosa) para modelar a tomada de decisão. Na agricultura, variáveis como saúde foliar e infestação não são binárias; elas possuem graus de incerteza que o motor Fuzzy captura através de Funções de Pertinência.
+
+Componentes da Arquitetura:
+
+* Fuzzificação: As entradas numéricas (NDVI e % de Infestação) são transformadas em termos linguísticos (Pobre, Médio, Bom para saúde; Baixa, Moderada, Alta para pragas).
+
+* Base de Regras: Um conjunto de regras lógicas define o comportamento do drone (ex: SE o NDVI é pobre OU a infestação é alta, ENTÃO a pulverização é intensa).
+
+* Defuzzificação: O motor converte os resultados nebulosos em um valor numérico exato de Taxa Variável (VRT) para o atuador do drone.
