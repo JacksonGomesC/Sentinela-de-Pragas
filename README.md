@@ -84,3 +84,7 @@ Para reproduzir o ambiente e testar o diagnóstico:
 
 ```bash
    pip install -r requirements.txt
+```
+\---
+
+### 8\. Arquitetura Lógica: Motor de Decisão Fuzzy
