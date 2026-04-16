@@ -39,7 +39,7 @@ Nesta seção, descrevemos o cenário de atuação e a modelagem do agente intel
 |**Performance (P)**|Eficiência e Precisão: Mapeamento de 100% da área de cultivo; redução de 50% no tempo entre diagnóstico e aplicação; erro de geolocalização inferior a 50cm (GPS RTK); e redução comprovada no custo de insumos.|
 |**Ambiente (E)**|Área Agrícola (Lavoura): Grandes extensões de cultivo abertas, sujeitas a variações de luminosidade solar, ventos e obstáculos físicos (árvores, relevo). Opera na malha geográfica da plantação.|
 |**Atuadores (A)**|Sistemas de Controle e Estabilidade: Motores de voo (propulsão), Gimbal de 3 eixos (estabilização da imagem), Link de Rádio (transmissão de dados/mapas) e sistema de pouso/retorno autônomo.|
-|\*\*Sensores (S) \*\*|Percepção Multimodal: Câmera Multiespectral (infravermelho para estresse hídrico/pragas), Câmera RGB 4K (detalhamento visual), GPS RTK (posicionamento centimétrico) e sensores de luminosidade.|
+|**Sensores (S) **|Percepção Multimodal: Câmera Multiespectral (infravermelho para estresse hídrico/pragas), Câmera RGB 4K (detalhamento visual), GPS RTK (posicionamento centimétrico) e sensores de luminosidade.|
 
 \---
 
