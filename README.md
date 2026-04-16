@@ -103,3 +103,25 @@ Componentes da Arquitetura:
 
 #### Funções de Pertinência - Controle de Pulverização
 ![Gráfico Pulverização](grafico_pulverizacao.png)
+
+**Visualização das Funções de Pertinência**
+**Nota:** Os gráficos acima demonstram a transição suave entre os estados, garantindo que o drone não mude a dosagem de forma brusca, o que preserva os componentes mecânicos e otimiza o uso de defensivos.
+
+\---
+
+### 9\. Logs de Saída: Integração Híbrida (Fuzzy + IA)
+O sucesso deste projeto reside na hibridização: o motor Fuzzy resolve o problema matemático/agronômico, enquanto a IA Generativa (Gemini Flash) atua na camada de Explicabilidade (XAI), transformando dados frios em insights estratégicos.
+
+**Exemplo de log real capturado no console:**
+--- 🛰️ ANÁLISE TÉCNICA DO PONTO 1 ---
+[SISTEMA FUZZY]
+Entrada NDVI: 0.33 (Estado: Pobre/Crítico)
+Entrada Infestação: 51.91% (Estado: Moderada-Alta)
+Cálculo de Saída: 52.73% de intensidade de pulverização.
+
+[RELATÓRIO ESTRATÉGICO GEMINI]
+"A análise do Ponto 1 indica uma confluência de fatores críticos. Embora a infestação 
+exigisse uma dose maior, o baixo NDVI revela uma planta debilitada. A aplicação 
+foi calibrada em 52.73% para evitar a fitotoxicidade severa, concentrando o 
+defensivo na área foliar remanescente. RECOMENDAÇÃO: Intervenção imediata seguida 
+de análise de solo para verificar deficiência nutricional latente."
