@@ -50,7 +50,7 @@ Definição das fontes de dados e da inteligência por trás da solução.
 
 * **Origem dos Dados:** O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo:  
   NDVI: Índice de vigor vegetativo (0 a 1)  
-  Infestação: Porcentagem de pragas detectadas via visão computacional
+  Infestação: Porcentagem de pragas detectadas via visão computacional  
   O dataset de imagens Detecção de Pragas - Soja (https://www.kaggle.com/datasets/neuronlab/deteco-de-pragas-soja?resource=download) é um conjunto de dados disponibilizado para testes na plataforma Neuron Lab. Contém: 22 imagens da praga lagarta da soja, 20 imagens da vaquinha da soja e 27 imagens de plantas saudáveis.
   GPS RTK: Coordenadas de alta precisão.  
 * **Lógica de IA:** Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).
