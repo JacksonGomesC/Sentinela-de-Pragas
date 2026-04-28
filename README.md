@@ -150,3 +150,6 @@ O sistema agora opera em três camadas:
 
 #### 10.3. Conclusão do Projeto
 O projeto comprova a viabilidade de sistemas autônomos na agricultura de precisão, onde a Inteligência Artificial não apenas detecta problemas, mas justifica suas ações, facilitando a supervisão humana e otimizando o uso de recursos no campo.
+
+**Abaixo, apresentamos os gráficos de convergência do modelo, onde é possível observar a estabilização da perda (Loss) e o crescimento da acurácia, validando a eficácia do treinamento.**
+![Gráfico Desempenho](grafico_desempenho_etapa3.png)
