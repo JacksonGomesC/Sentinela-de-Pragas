@@ -50,7 +50,8 @@ Definição das fontes de dados e da inteligência por trás da solução.
 
 * **Origem dos Dados:** O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo:  
   NDVI: Índice de vigor vegetativo (0 a 1)  
-  Infestação: Porcentagem de pragas detectadas via visão computacional  
+  Infestação: Porcentagem de pragas detectadas via visão computacional
+  O dataset de imagens Detecção de Pragas - Soja (https://www.kaggle.com/datasets/neuronlab/deteco-de-pragas-soja?resource=download) é um conjunto de dados disponibilizado para testes na plataforma Neuron Lab. Contém: 22 imagens da praga lagarta da soja, 20 imagens da vaquinha da soja e 27 imagens de plantas saudáveis.
   GPS RTK: Coordenadas de alta precisão.  
 * **Lógica de IA:** Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).
 * **Justificativa:** Por que essa técnica é ideal para este problema específico? As CNNs são a técnica ideal porque possuem uma capacidade superior de extração de características espaciais (texturas, padrões de manchas e formas de insetos) que são imperceptíveis em análises estatísticas comuns. A utilização de arquiteturas como o YOLO (You Only Look Once) permite o processamento em tempo real diretamente no link de rádio ou na estação de solo, garantindo que o mapa de calor seja gerado enquanto o drone ainda está em voo. Além disso, a integração de dados multiespectrais funciona como uma "camada de atenção" extra, permitindo que a IA detecte anomalias clorofilianas antes que o dano físico seja visível na imagem RGB.
@@ -129,3 +130,23 @@ exigisse uma dose maior, o baixo NDVI revela uma planta debilitada. A aplicaçã
 foi calibrada em 52.73% para evitar a fitotoxicidade severa, concentrando o 
 defensivo na área foliar remanescente. RECOMENDAÇÃO: Intervenção imediata seguida 
 de análise de solo para verificar deficiência nutricional latente."
+
+\---
+
+### 10. Inteligência Artificial Evolutiva e Resultados (Etapa 3)
+
+Nesta etapa final, o sistema transcendeu a lógica de sensores fixos, integrando uma camada de percepção visual e narrativa técnica.
+
+#### 10.1. Integração Multimodal
+O sistema agora opera em três camadas:
+1.  **Percepção (RNA):** Utilização da arquitetura MobileNetV2 para classificação de pragas em tempo real.
+2.  **Ação (Lógica de Controle):** Algoritmo de decisão que aciona atuadores baseado em limiares de confiança (Threshold > 80%).
+3.  **Explicação (GenAI):** Integração com o modelo `gemini-1.5-flash` para gerar diagnósticos narrativos sobre as decisões do sistema.
+
+#### 10.2. Critérios de Sucesso e Desempenho
+* **Capacidade de Generalização:** O modelo foi validado com imagens externas (out-of-distribution), mantendo a assertividade mesmo em cenários inéditos.
+* **Métricas de Treino:** Observou-se a convergência das curvas de perda (Loss) e estabilização da acurácia de validação acima de 85%.
+* **Segurança Operacional:** A lógica de controle demonstrou-se resiliente, evitando falsos positivos ao manter o atuador desligado em casos de baixa confiança estatística.
+
+#### 10.3. Conclusão do Projeto
+O projeto comprova a viabilidade de sistemas autônomos na agricultura de precisão, onde a Inteligência Artificial não apenas detecta problemas, mas justifica suas ações, facilitando a supervisão humana e otimizando o uso de recursos no campo.
