@@ -3,9 +3,11 @@ pandas
 numpy>=1.23.5,<2.0.0
 scipy
 
-# Inteligência Artificial e Lógica
+# Inteligência Artificial, RNA e Visão Computacional
 scikit-fuzzy
 google-generativeai
+tensorflow>=2.15.0
 
 # Visualização e Ambiente
 matplotlib
+Pillow
