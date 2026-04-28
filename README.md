@@ -50,9 +50,9 @@ Definição das fontes de dados e da inteligência por trás da solução.
 
 * **Origem dos Dados:** O dataset monitoramento_lavoura.csv contém 500 amostras sintéticas que simulam a telemetria de um drone em campo:  
   NDVI: Índice de vigor vegetativo (0 a 1)  
-  Infestação: Porcentagem de pragas detectadas via visão computacional
+  Infestação: Porcentagem de pragas detectadas via visão computacional  
   GPS RTK: Coordenadas de alta precisão.  
-  O dataset de imagens Detecção de Pragas - Soja (https://www.kaggle.com/datasets/neuronlab/deteco-de-pragas-soja?resource=download) é um conjunto de dados disponibilizado para testes na plataforma Neuron Lab. Contém: 22 imagens da praga lagarta da soja, 20 imagens da vaquinha da soja e 27 imagens de plantas saudáveis.     
+  O dataset de imagens Detecção de Pragas - Soja (https://www.kaggle.com/datasets/neuronlab/deteco-de-pragas-soja?resource=download) é um conjunto de dados disponibilizado para testes na plataforma Neuron Lab. Contém: 22 imagens da praga lagarta da soja, 20 imagens da vaquinha da soja e 27 imagens de plantas saudáveis.       
 * **Lógica de IA:** Redes Neurais Convolucionais (CNNs) combinadas com Algoritmos de Segmentação Semântica (como U-Net ou YOLOv8/v10).
 * **Justificativa:** Por que essa técnica é ideal para este problema específico? As CNNs são a técnica ideal porque possuem uma capacidade superior de extração de características espaciais (texturas, padrões de manchas e formas de insetos) que são imperceptíveis em análises estatísticas comuns. A utilização de arquiteturas como o YOLO (You Only Look Once) permite o processamento em tempo real diretamente no link de rádio ou na estação de solo, garantindo que o mapa de calor seja gerado enquanto o drone ainda está em voo. Além disso, a integração de dados multiespectrais funciona como uma "camada de atenção" extra, permitindo que a IA detecte anomalias clorofilianas antes que o dano físico seja visível na imagem RGB.
 
