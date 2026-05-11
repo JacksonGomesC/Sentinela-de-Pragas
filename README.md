@@ -115,7 +115,7 @@ Componentes da Arquitetura:
 ![Gráfico NDVI](Graficos/grafico_ndvi.png)
 
 #### Funções de Pertinência - Controle de Pulverização
-![Gráfico Pulverização](grafico_pulverizacao.png)
+![Gráfico Pulverização](Graficos/grafico_pulverizacao.png)
 
 **Visualização das Funções de Pertinência**  
 **Nota:** Os gráficos acima demonstram a transição suave entre os estados, garantindo que o drone não mude a dosagem de forma brusca, o que preserva os componentes mecânicos e otimiza o uso de defensivos.
@@ -160,4 +160,4 @@ O sistema agora opera em três camadas:
 O projeto comprova a viabilidade de sistemas autônomos na agricultura de precisão, onde a Inteligência Artificial não apenas detecta problemas, mas justifica suas ações, facilitando a supervisão humana e otimizando o uso de recursos no campo.
 
 **Abaixo, apresentamos os gráficos de convergência do modelo, onde é possível observar a estabilização da perda (Loss) e o crescimento da acurácia, validando a eficácia do treinamento.**
-![Gráfico Desempenho](grafico_desempenho_etapa3.png)
+![Gráfico Desempenho](Graficos/grafico_desempenho_etapa3.png)
