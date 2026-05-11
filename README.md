@@ -7,7 +7,7 @@
 ### 🎥 Demonstração do Projeto
 **[Assista ao Pitch e Demonstração da Solução (2-3 min)](INSERIR_LINK_DO_VIDEO_AQUI)**
 
-# Projeto: \[Sentinela de Praga]
+# Projeto: \[Sentinela de Pragas]
 
 ### 1\. Identificação do Grupo
 
