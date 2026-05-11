@@ -112,7 +112,7 @@ Componentes da Arquitetura:
 * Defuzzificação: O motor converte os resultados nebulosos em um valor numérico exato de Taxa Variável (VRT) para o atuador do drone.
 
 #### Funções de Pertinência - Saúde da Planta (NDVI)
-![Gráfico NDVI](grafico_ndvi.png)
+![Gráfico NDVI](Graficos/grafico_ndvi.png)
 
 #### Funções de Pertinência - Controle de Pulverização
 ![Gráfico Pulverização](grafico_pulverizacao.png)
