@@ -163,4 +163,5 @@ O projeto comprova a viabilidade de sistemas autônomos na agricultura de precis
 ![Gráfico Desempenho](Graficos/grafico_desempenho_etapa3.png)
 
 \---
+
 © 2026 - Projeto de Inteligência Artificial - Faculdade Engenheiro Salvador Arena
