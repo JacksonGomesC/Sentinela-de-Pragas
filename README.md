@@ -5,7 +5,7 @@
 ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
 
 ### 🎥 Demonstração do Projeto
-**[Assista ao Pitch e Demonstração da Solução (2-3 min)](INSERIR_LINK_DO_VIDEO_AQUI)**
+**[Assista ao Pitch e Demonstração da Solução (2-3 min)](https://youtu.be/hG4HYOZkBFE)**
 
 # Projeto: \[Sentinela de Pragas]
 
@@ -161,3 +161,6 @@ O projeto comprova a viabilidade de sistemas autônomos na agricultura de precis
 
 **Abaixo, apresentamos os gráficos de convergência do modelo, onde é possível observar a estabilização da perda (Loss) e o crescimento da acurácia, validando a eficácia do treinamento.**
 ![Gráfico Desempenho](Graficos/grafico_desempenho_etapa3.png)
+
+\---
+© 2026 - Projeto de Inteligência Artificial - Faculdade Engenheiro Salvador Arena
