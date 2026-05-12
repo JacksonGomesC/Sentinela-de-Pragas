@@ -162,6 +162,6 @@ O projeto comprova a viabilidade de sistemas autônomos na agricultura de precis
 **Abaixo, apresentamos os gráficos de convergência do modelo, onde é possível observar a estabilização da perda (Loss) e o crescimento da acurácia, validando a eficácia do treinamento.**
 ![Gráfico Desempenho](Graficos/grafico_desempenho_etapa3.png)
 
-\---
+\
 
 © 2026 - Projeto de Inteligência Artificial - Faculdade Engenheiro Salvador Arena
