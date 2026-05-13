@@ -20,7 +20,7 @@
   * José de Jesus Amaral - RA: 062220033
   * Jackson Gomes Cerqueira - RA: 062220030
 
-\---
+---
 
 ### 2\. Área Problema Selecionada
 
